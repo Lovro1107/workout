@@ -1,0 +1,68 @@
+@use "fonts";
+@use "colors";
+
+html {
+  body {
+    background-color: colors.$black;
+    font-family: Inter, 'sans-serif';
+  }
+}
+
+.card {
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: max-content;
+}
+
+.text- {
+  &uppercase {
+    text-transform: uppercase;
+  }
+
+  &white {
+    color: colors.$white;
+  }
+
+  &grey {
+    color: colors.$grey;
+    opacity: 65%;
+  }
+
+  &red {
+    color: colors.$red;
+  }
+
+  &orange {
+    color: colors.$orange;
+  }
+
+  &purple {
+    color: colors.$purple;
+  }
+}
+
+.bg- {
+  &white {
+    background-color: colors.$white;
+  }
+
+  &grey {
+    background-color: colors.$grey;
+  }
+
+  &dark-grey {
+    background-color: colors.$darkGrey;
+  }
+
+  &red {
+    background-color: colors.$red;
+  }
+
+  &orange {
+    background-color: colors.$orange;
+  }
+
+  &purple {
+    background-color: colors.$purple;
+  }
+}

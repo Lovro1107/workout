@@ -15,13 +15,11 @@
       Join Club Now!
     </div>
 
-    <div class="bg-dark-grey tutorial card">
-      <div class="play-icon" />
-      <div>
-        <span class="text-white tutorial-count">350+</span>
-        <span class="text-grey tutorial-text">Video tutorials</span>
-      </div>
-    </div>
+    <VideoTutorialCard class="video-tutorial-card" />
+
+    <WorkoutVideosCard class="workout-card" />
+
+    <FeaturedBanner class="featured-banner" />
   </div>
 </template>
 
@@ -58,33 +56,29 @@
     font-weight: 600;
   }
 
-  .card.tutorial {
+  .video-tutorial-card {
     position: absolute;
     top: 25rem;
     left: 36rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.75rem;
+  }
 
-    .play-icon {
-      width: 2.5rem;
-      height: 2.5rem;
-      background: colors.$orange;
-      border-radius: 50px;
-    }
+  .workout-card {
+    position: absolute;
+    top: 32rem;
+    left: 65rem;
+  }
 
-    .tutorial-count {
-      display: block;
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .tutorial-text {
-      letter-spacing: 0.5px;
-      font-weight: 300;
-    }
+  .featured-banner {
+    margin-top: 110px;
   }
 }
 </style>
+<script lang="ts">
+import VideoTutorialCard from "@/components/VideoTutorialCard.vue";
+import WorkoutVideosCard from "@/components/WorkoutVideosCard.vue";
+import FeaturedBanner from "@/components/FeaturedBanner.vue";
+
+export default {
+  components: { FeaturedBanner, WorkoutVideosCard, VideoTutorialCard }
+}
+</script>

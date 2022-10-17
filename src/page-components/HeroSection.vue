@@ -1,17 +1,17 @@
 <template>
   <div class="hero-section">
-    <span class="main-title text-white">WORKOUT WITH ME</span>
+    <span class="main-title">WORKOUT WITH ME</span>
     <img
         alt="Athlete tying his shoes."
         src="../assets/img/hero.png"
     />
 
-    <p class="subtitle text-grey">
+    <p class="body-text" style="width: 650px;">
       A huge selection of health and fitness content, healthy recipes and transformation stories to
       help you get fit and stay fit!
     </p>
 
-    <div class="bg-red text-white card join-club">
+    <div class="bg-red card join-club">
       Join Club Now!
     </div>
 
@@ -44,12 +44,6 @@
     line-height: 11rem;
   }
 
-  .subtitle {
-    font-weight: 300;
-    width: 650px;
-    letter-spacing: 0.5px;
-  }
-
   .join-club {
     margin-top: 48px;
     letter-spacing: 1px;
@@ -73,12 +67,8 @@
   }
 }
 </style>
-<script lang="ts">
+<script setup lang="ts">
 import VideoTutorialCard from "@/components/VideoTutorialCard.vue";
 import WorkoutVideosCard from "@/components/WorkoutVideosCard.vue";
 import FeaturedBanner from "@/components/FeaturedBanner.vue";
-
-export default {
-  components: { FeaturedBanner, WorkoutVideosCard, VideoTutorialCard }
-}
 </script>

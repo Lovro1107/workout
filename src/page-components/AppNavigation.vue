@@ -1,5 +1,5 @@
 <template>
-  <div class="app-navigation text-white">
+  <div class="app-navigation">
     <span class="link home">WORKOUT</span>
     <div class="links">
       <span

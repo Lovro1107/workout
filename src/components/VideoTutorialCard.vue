@@ -2,7 +2,7 @@
   <div class="bg-dark-grey card tutorial">
     <div class="play-icon" />
     <div>
-      <span class="text-white tutorial-count">350+</span>
+      <span class="tutorial-count">350+</span>
       <span class="text-grey tutorial-text">Video tutorials</span>
     </div>
   </div>

@@ -2,13 +2,16 @@
   <div class="app-container">
     <AppNavigation />
 
-    <HeroSection/>
+    <HeroSection />
+
+    <MiddleSection />
   </div>
 </template>
 
 <script setup lang="ts">
 import AppNavigation from "@/page-components/AppNavigation.vue";
 import HeroSection from "@/page-components/HeroSection.vue";
+import MiddleSection from "@/page-components/MiddleSection.vue";
 </script>
 
 <style lang="scss">
